@@ -6,7 +6,7 @@
 int prior(char symbol) {
   switch (symbol) {
   case '(':
-    return 1;
+    return 0;
   case ')':
     return 1;
   case '+':
