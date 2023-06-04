@@ -31,7 +31,7 @@ std::string infx2pstfx(std::string inf) {
   for (auto& op : inf) {
     pr = prior(op);
     prOnHeight = prior(stack.get());
-    if (op == '\n') { 
+    if (op == '\n') {
       while (prior(stack.get()) > 1) {
         output += stack.pop();
         output += " ";
